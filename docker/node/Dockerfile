@@ -20,6 +20,6 @@ FROM node:17.6.0-alpine3.14
 
 WORKDIR /sample-aspida
 
-COPY --from=builder /noname-client ./
+COPY --from=builder /sample-aspida ./
 
 CMD ["npm", "run", "start"]
